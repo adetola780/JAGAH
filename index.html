@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAGAH | Premium Streetwear Shop</title>
+  <meta name="description" content="Shop JAGAH premium streetwear, gallery tees, graphic drops, and movement pieces with WhatsApp ordering.">
+  <meta name="theme-color" content="#0B0B0B">
+  <meta property="og:title" content="JAGAH Streetwear">
+  <meta property="og:description" content="Movement beyond borders. Shop JAGAH gallery tees and graphic drops.">
+  <meta property="og:image" content="assets/jagah-white-blue-jgh-tee.png">
+  <link rel="canonical" href="/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230b0b0b'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-size='20' font-family='Arial' font-weight='900' fill='%23f2bf26'%3EJG%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=jagah-cart-drawer">
+</head>
+<body>
+  <a class="skip-link" href="#shop">Skip to shop</a>
+
+  <header class="site-header" data-header>
+    <a class="brand-wordmark" href="#top" aria-label="JAGAH home">
+      <img src="assets/jagah-logo-transparent.png" alt="JAGAH">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#top">Home</a>
+      <a class="has-subnav" href="#shop">Shop</a>
+      <a href="about.html">About</a>
+      <a href="#support">FAQ</a>
+      <a href="#support">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-button wishlist-open" type="button" aria-label="Open wishlist" title="Wishlist">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M20.8 4.6c-1.6-1.8-4.1-2-5.9-.4L12 6.8 9.1 4.2C7.3 2.6 4.8 2.8 3.2 4.6c-1.6 1.8-1.5 4.6.2 6.3L12 19l8.6-8.1c1.7-1.7 1.8-4.5.2-6.3Z"></path>
+        </svg>
+        <span class="count-pill" data-wishlist-count>0</span>
+      </button>
+      <button class="icon-button account-open" type="button" aria-label="Open account" title="Account">
+        <span>Login</span>
+      </button>
+      <form class="search" role="search">
+        <label class="sr-only" for="site-search">Search JAGAH products</label>
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m20 20-4-4"></path>
+        </svg>
+        <input id="site-search" type="search" autocomplete="off" placeholder="Search tees">
+        <div class="suggestions" hidden></div>
+      </form>
+      <button class="bag-trigger" type="button" aria-label="Open shopping bag" title="Shopping bag">
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path d="M6 8h12l-1 13H7L6 8Z"></path>
+          <path d="M9 8a3 3 0 0 1 6 0"></path>
+        </svg>
+        <span>Bag</span>
+        <strong data-bag-count>0</strong>
+      </button>
+      <button class="menu-button" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#top">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="about.html">About</a>
+      <a href="#support">FAQ</a>
+      <a href="#support">Contact</a>
+    </nav>
+  </header>
+
+  <nav class="category-ribbon" aria-label="Shop categories">
+    <button class="sale-tab" type="button" data-brand-category="All">Sale</button>
+    <button type="button" data-brand-category="All">New in</button>
+    <button type="button" data-brand-category="Gallery Tees">Tees</button>
+    <button type="button" data-brand-category="Graphic Drops">Graphics</button>
+    <button type="button" data-brand-category="Brand Art">Brand art</button>
+    <a href="#collection">Featured</a>
+    <a href="#support">Help</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero" aria-label="JAGAH streetwear">
+      <div class="hero-slideshow" aria-hidden="true">
+        <figure class="hero-slide is-active" data-hero-slide>
+          <img src="assets/jagah-campaign-lineup.webp" alt="">
+        </figure>
+        <figure class="hero-slide" data-hero-slide>
+          <img src="assets/jagah-campaign-table.webp" alt="">
+        </figure>
+      </div>
+      <div class="hero-shade"></div>
+      <div class="hero-copy" data-reveal>
+        <a class="hero-shop-button" href="#shop">Shop now</a>
+        <div class="hero-dots" aria-label="Hero slideshow controls">
+          <button class="is-active" type="button" aria-label="Show slide 1" data-hero-dot="0"></button>
+          <button type="button" aria-label="Show slide 2" data-hero-dot="1"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-section product-first" id="shop">
+      <div class="section-heading product-newin-heading" data-reveal>
+        <div>
+          <p class="kicker">New In</p>
+          <p>Explore our new collection</p>
+        </div>
+        <a href="#shop">Shop New In</a>
+      </div>
+
+      <div class="shop-tools" data-reveal>
+        <div class="chip-row" aria-label="Category filters" data-category-filters></div>
+        <div class="tool-controls">
+          <label>
+            Colour
+            <select id="color-filter">
+              <option value="">All colours</option>
+            </select>
+          </label>
+          <label>
+            Sort
+            <select id="sort-select">
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="price-low">Price low to high</option>
+              <option value="price-high">Price high to low</option>
+            </select>
+          </label>
+        </div>
+      </div>
+
+      <div class="result-line">
+        <span data-result-count>12 products</span>
+        <button class="text-button" type="button" data-clear-filters>Clear filters</button>
+      </div>
+
+            <div class="product-groups" data-product-grid>
+        <section class="product-group">
+          <div class="product-group-heading">
+            <div>
+              <span>New Arrivals</span>
+              <p>Latest JAGAH graphic t-shirt colourways</p>
+            </div>
+            <strong>5 products</strong>
+          </div>
+          <div class="product-grid">
+            <article class="product-card">
+              <div class="product-media product-media-contain" data-action="open" data-id="stormline-gallery-tee">
+                <img src="assets/jagah-graphic-graphite.webp" alt="JAGAH Graphic T-Shirt" loading="eager" decoding="async" fetchpriority="high">
+                <span class="badge">New Arrival</span>
+                <button class="card-wish" type="button" data-action="wishlist" data-id="stormline-gallery-tee" aria-label="Save JAGAH Graphic T-Shirt"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6c-1.6-1.8-4.1-2-5.9-.4L12 6.8 9.1 4.2C7.3 2.6 4.8 2.8 3.2 4.6c-1.6 1.8-1.5 4.6.2 6.3L12 19l8.6-8.1c1.7-1.7 1.8-4.5.2-6.3Z"></path></svg></button>
+                <button class="quick-view-bar" type="button" data-action="open" data-id="stormline-gallery-tee" aria-label="Select product JAGAH Graphic T-Shirt">Select product</button>
+              </div>
+              <div class="product-info"><div class="product-brand">jagah</div><h3 class="product-title">JAGAH GRAPHIC T-SHIRT</h3><div class="price-row"><strong class="price">NGN 50,000</strong></div><div class="product-colours">Available in 5 colours</div><div class="card-actions"><button class="button primary" type="button" data-action="quick-add" data-id="stormline-gallery-tee">Add to bag</button><button class="button soft" type="button" data-action="open" data-id="stormline-gallery-tee">Select</button></div></div>
+            </article>
+            <article class="product-card">
+              <div class="product-media product-media-contain" data-action="open" data-id="midnight-stormline-gallery-tee">
+                <img src="assets/jagah-graphic-midnight.webp" alt="JAGAH Graphic T-Shirt" loading="eager" decoding="async">
+                <span class="badge">New Arrival</span>
+                <button class="card-wish" type="button" data-action="wishlist" data-id="midnight-stormline-gallery-tee" aria-label="Save JAGAH Graphic T-Shirt"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6c-1.6-1.8-4.1-2-5.9-.4L12 6.8 9.1 4.2C7.3 2.6 4.8 2.8 3.2 4.6c-1.6 1.8-1.5 4.6.2 6.3L12 19l8.6-8.1c1.7-1.7 1.8-4.5.2-6.3Z"></path></svg></button>
+                <button class="quick-view-bar" type="button" data-action="open" data-id="midnight-stormline-gallery-tee" aria-label="Select product JAGAH Graphic T-Shirt">Select product</button>
+              </div>
+              <div class="product-info"><div class="product-brand">jagah</div><h3 class="product-title">JAGAH GRAPHIC T-SHIRT</h3><div class="price-row"><strong class="price">NGN 50,000</strong></div><div class="product-colours">Available in 5 colours</div><div class="card-actions"><button class="button primary" type="button" data-action="quick-add" data-id="midnight-stormline-gallery-tee">Add to bag</button><button class="button soft" type="button" data-action="open" data-id="midnight-stormline-gallery-tee">Select</button></div></div>
+            </article>
+            <article class="product-card">
+              <div class="product-media product-media-contain" data-action="open" data-id="sky-tide-gallery-tee">
+                <img src="assets/jagah-graphic-sky.webp" alt="JAGAH Graphic T-Shirt" loading="eager" decoding="async">
+                <span class="badge">New Arrival</span>
+                <button class="card-wish" type="button" data-action="wishlist" data-id="sky-tide-gallery-tee" aria-label="Save JAGAH Graphic T-Shirt"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6c-1.6-1.8-4.1-2-5.9-.4L12 6.8 9.1 4.2C7.3 2.6 4.8 2.8 3.2 4.6c-1.6 1.8-1.5 4.6.2 6.3L12 19l8.6-8.1c1.7-1.7 1.8-4.5.2-6.3Z"></path></svg></button>
+                <button class="quick-view-bar" type="button" data-action="open" data-id="sky-tide-gallery-tee" aria-label="Select product JAGAH Graphic T-Shirt">Select product</button>
+              </div>
+              <div class="product-info"><div class="product-brand">jagah</div><h3 class="product-title">JAGAH GRAPHIC T-SHIRT</h3><div class="price-row"><strong class="price">NGN 50,000</strong></div><div class="product-colours">Available in 5 colours</div><div class="card-actions"><button class="button primary" type="button" data-action="quick-add" data-id="sky-tide-gallery-tee">Add to bag</button><button class="button soft" type="button" data-action="open" data-id="sky-tide-gallery-tee">Select</button></div></div>
+            </article>
+            <article class="product-card">
+              <div class="product-media product-media-contain" data-action="open" data-id="cream-tide-gallery-tee">
+                <img src="assets/jagah-graphic-cream.webp" alt="JAGAH Graphic T-Shirt" loading="eager" decoding="async">
+                <span class="badge">New Arrival</span>
+                <button class="card-wish" type="button" data-action="wishlist" data-id="cream-tide-gallery-tee" aria-label="Save JAGAH Graphic T-Shirt"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6c-1.6-1.8-4.1-2-5.9-.4L12 6.8 9.1 4.2C7.3 2.6 4.8 2.8 3.2 4.6c-1.6 1.8-1.5 4.6.2 6.3L12 19l8.6-8.1c1.7-1.7 1.8-4.5.2-6.3Z"></path></svg></button>
+                <button class="quick-view-bar" type="button" data-action="open" data-id="cream-tide-gallery-tee" aria-label="Select product JAGAH Graphic T-Shirt">Select product</button>
+              </div>
+              <div class="product-info"><div class="product-brand">jagah</div><h3 class="product-title">JAGAH GRAPHIC T-SHIRT</h3><div class="price-row"><strong class="price">NGN 50,000</strong></div><div class="product-colours">Available in 5 colours</div><div class="card-actions"><button class="button primary" type="button" data-action="quick-add" data-id="cream-tide-gallery-tee">Add to bag</button><button class="button soft" type="button" data-action="open" data-id="cream-tide-gallery-tee">Select</button></div></div>
+            </article>
+            <article class="product-card">
+              <div class="product-media product-media-contain" data-action="open" data-id="white-blue-tide-gallery-tee">
+                <img src="assets/jagah-graphic-white-blue.webp" alt="JAGAH Graphic T-Shirt" loading="lazy" decoding="async">
+                <span class="badge">New Arrival</span>
+                <button class="card-wish" type="button" data-action="wishlist" data-id="white-blue-tide-gallery-tee" aria-label="Save JAGAH Graphic T-Shirt"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6c-1.6-1.8-4.1-2-5.9-.4L12 6.8 9.1 4.2C7.3 2.6 4.8 2.8 3.2 4.6c-1.6 1.8-1.5 4.6.2 6.3L12 19l8.6-8.1c1.7-1.7 1.8-4.5.2-6.3Z"></path></svg></button>
+                <button class="quick-view-bar" type="button" data-action="open" data-id="white-blue-tide-gallery-tee" aria-label="Select product JAGAH Graphic T-Shirt">Select product</button>
+              </div>
+              <div class="product-info"><div class="product-brand">jagah</div><h3 class="product-title">JAGAH GRAPHIC T-SHIRT</h3><div class="price-row"><strong class="price">NGN 50,000</strong></div><div class="product-colours">Available in 5 colours</div><div class="card-actions"><button class="button primary" type="button" data-action="quick-add" data-id="white-blue-tide-gallery-tee">Add to bag</button><button class="button soft" type="button" data-action="open" data-id="white-blue-tide-gallery-tee">Select</button></div></div>
+            </article>
+          </div>
+        </section>
+        <section class="product-group">
+          <div class="product-group-heading">
+            <div>
+              <span>Explore More Products</span>
+            </div>
+            <strong>7 products</strong>
+          </div>
+          <div class="product-grid">
+            <article class="product-card"><div class="product-media product-media-contain" data-action="open" data-id="white-blue-jgh-tee"><img src="assets/jagah-white-blue-jgh-tee.webp" alt="White Blue JGH Tee" loading="lazy" decoding="async"><span class="badge">New</span><button class="card-wish" type="button" data-action="wishlist" data-id="white-blue-jgh-tee" aria-label="Save White Blue JGH Tee"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6c-1.6-1.8-4.1-2-5.9-.4L12 6.8 9.1 4.2C7.3 2.6 4.8 2.8 3.2 4.6c-1.6 1.8-1.5 4.6.2 6.3L12 19l8.6-8.1c1.7-1.7 1.8-4.5.2-6.3Z"></path></svg></button><button class="quick-view-bar" type="button" data-action="open" data-id="white-blue-jgh-tee">Select product</button></div><div class="product-info"><div class="product-brand">jagah</div><h3 class="product-title">WHITE BLUE JGH TEE</h3><div class="price-row"><strong class="price">NGN 50,000</strong></div><div class="product-colours">Available in 2 colours</div><div class="card-actions"><button class="button primary" type="button" data-action="quick-add" data-id="white-blue-jgh-tee">Add to bag</button><button class="button soft" type="button" data-action="open" data-id="white-blue-jgh-tee">Select</button></div></div></article>
+            <article class="product-card"><div class="product-media" data-action="open" data-id="motion-purpose-tee"><img src="assets/jagah-motion-purpose-tee.webp" alt="Motion Purpose Tee" loading="lazy" decoding="async"><span class="badge">New</span><button class="card-wish" type="button" data-action="wishlist" data-id="motion-purpose-tee" aria-label="Save Motion Purpose Tee"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6c-1.6-1.8-4.1-2-5.9-.4L12 6.8 9.1 4.2C7.3 2.6 4.8 2.8 3.2 4.6c-1.6 1.8-1.5 4.6.2 6.3L12 19l8.6-8.1c1.7-1.7 1.8-4.5.2-6.3Z"></path></svg></button><button class="quick-view-bar" type="button" data-action="open" data-id="motion-purpose-tee">Select product</button></div><div class="product-info"><div class="product-brand">jagah</div><h3 class="product-title">MOTION PURPOSE TEE</h3><div class="price-row"><strong class="price">NGN 50,000</strong></div><div class="product-colours">Available in 3 colours</div><div class="card-actions"><button class="button primary" type="button" data-action="quick-add" data-id="motion-purpose-tee">Add to bag</button><button class="button soft" type="button" data-action="open" data-id="motion-purpose-tee">Select</button></div></div></article>
+            <article class="product-card"><div class="product-media" data-action="open" data-id="miracle-motion-tee"><img src="assets/jagah-miracle-motion-tee.webp" alt="Miracle In Motion Tee" loading="lazy" decoding="async"><span class="badge">Fresh</span><button class="card-wish" type="button" data-action="wishlist" data-id="miracle-motion-tee" aria-label="Save Miracle In Motion Tee"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6c-1.6-1.8-4.1-2-5.9-.4L12 6.8 9.1 4.2C7.3 2.6 4.8 2.8 3.2 4.6c-1.6 1.8-1.5 4.6.2 6.3L12 19l8.6-8.1c1.7-1.7 1.8-4.5.2-6.3Z"></path></svg></button><button class="quick-view-bar" type="button" data-action="open" data-id="miracle-motion-tee">Select product</button></div><div class="product-info"><div class="product-brand">jagah</div><h3 class="product-title">MIRACLE IN MOTION TEE</h3><div class="price-row"><strong class="price">NGN 50,000</strong></div><div class="product-colours">Available in 2 colours</div><div class="card-actions"><button class="button primary" type="button" data-action="quick-add" data-id="miracle-motion-tee">Add to bag</button><button class="button soft" type="button" data-action="open" data-id="miracle-motion-tee">Select</button></div></div></article>
+            <article class="product-card"><div class="product-media" data-action="open" data-id="movement-jgh-tee"><img src="assets/jagah-movement-tee.webp" alt="Movement JGH Tee" loading="lazy" decoding="async"><span class="badge">New</span><button class="card-wish" type="button" data-action="wishlist" data-id="movement-jgh-tee" aria-label="Save Movement JGH Tee"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6c-1.6-1.8-4.1-2-5.9-.4L12 6.8 9.1 4.2C7.3 2.6 4.8 2.8 3.2 4.6c-1.6 1.8-1.5 4.6.2 6.3L12 19l8.6-8.1c1.7-1.7 1.8-4.5.2-6.3Z"></path></svg></button><button class="quick-view-bar" type="button" data-action="open" data-id="movement-jgh-tee">Select product</button></div><div class="product-info"><div class="product-brand">jagah</div><h3 class="product-title">MOVEMENT JGH TEE</h3><div class="price-row"><strong class="price">NGN 50,000</strong></div><div class="product-colours">Available in 2 colours</div><div class="card-actions"><button class="button primary" type="button" data-action="quick-add" data-id="movement-jgh-tee">Add to bag</button><button class="button soft" type="button" data-action="open" data-id="movement-jgh-tee">Select</button></div></div></article>
+            <article class="product-card"><div class="product-media" data-action="open" data-id="retro-identity-gallery-tee"><img src="assets/jagah-retro-identity-gallery-tee.webp" alt="Retro Identity Gallery Tee" loading="lazy" decoding="async"><span class="badge">Identity</span><button class="card-wish" type="button" data-action="wishlist" data-id="retro-identity-gallery-tee" aria-label="Save Retro Identity Gallery Tee"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6c-1.6-1.8-4.1-2-5.9-.4L12 6.8 9.1 4.2C7.3 2.6 4.8 2.8 3.2 4.6c-1.6 1.8-1.5 4.6.2 6.3L12 19l8.6-8.1c1.7-1.7 1.8-4.5.2-6.3Z"></path></svg></button><button class="quick-view-bar" type="button" data-action="open" data-id="retro-identity-gallery-tee">Select product</button></div><div class="product-info"><div class="product-brand">jagah</div><h3 class="product-title">RETRO IDENTITY GALLERY TEE</h3><div class="price-row"><strong class="price">NGN 50,000</strong></div><div class="product-colours">Available in 2 colours</div><div class="card-actions"><button class="button primary" type="button" data-action="quick-add" data-id="retro-identity-gallery-tee">Add to bag</button><button class="button soft" type="button" data-action="open" data-id="retro-identity-gallery-tee">Select</button></div></div></article>
+            <article class="product-card"><div class="product-media" data-action="open" data-id="peace-love-tranquility-tee"><img src="assets/jagah-peace-love-tranquility-tee.webp" alt="Peace Love Tranquility Tee" loading="lazy" decoding="async"><span class="badge">Art</span><button class="card-wish" type="button" data-action="wishlist" data-id="peace-love-tranquility-tee" aria-label="Save Peace Love Tranquility Tee"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6c-1.6-1.8-4.1-2-5.9-.4L12 6.8 9.1 4.2C7.3 2.6 4.8 2.8 3.2 4.6c-1.6 1.8-1.5 4.6.2 6.3L12 19l8.6-8.1c1.7-1.7 1.8-4.5.2-6.3Z"></path></svg></button><button class="quick-view-bar" type="button" data-action="open" data-id="peace-love-tranquility-tee">Select product</button></div><div class="product-info"><div class="product-brand">jagah</div><h3 class="product-title">PEACE LOVE TRANQUILITY TEE</h3><div class="price-row"><strong class="price">NGN 50,000</strong></div><div class="product-colours">Available in 2 colours</div><div class="card-actions"><button class="button primary" type="button" data-action="quick-add" data-id="peace-love-tranquility-tee">Add to bag</button><button class="button soft" type="button" data-action="open" data-id="peace-love-tranquility-tee">Select</button></div></div></article>
+            <article class="product-card"><div class="product-media" data-action="open" data-id="bloom-flight-logo-tee"><img src="assets/jagah-bloom-flight-logo-tee.webp" alt="Bloom Flight Tee" loading="lazy" decoding="async"><span class="badge">Featured</span><button class="card-wish" type="button" data-action="wishlist" data-id="bloom-flight-logo-tee" aria-label="Save Bloom Flight Tee"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.8 4.6c-1.6-1.8-4.1-2-5.9-.4L12 6.8 9.1 4.2C7.3 2.6 4.8 2.8 3.2 4.6c-1.6 1.8-1.5 4.6.2 6.3L12 19l8.6-8.1c1.7-1.7 1.8-4.5.2-6.3Z"></path></svg></button><button class="quick-view-bar" type="button" data-action="open" data-id="bloom-flight-logo-tee">Select product</button></div><div class="product-info"><div class="product-brand">jagah</div><h3 class="product-title">BLOOM FLIGHT TEE</h3><div class="price-row"><strong class="price">NGN 50,000</strong></div><div class="product-colours">Available in 2 colours</div><div class="card-actions"><button class="button primary" type="button" data-action="quick-add" data-id="bloom-flight-logo-tee">Add to bag</button><button class="button soft" type="button" data-action="open" data-id="bloom-flight-logo-tee">Select</button></div></div></article>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="drop-live-showcase" id="drop" aria-label="JAGAH Drop Live">
+      <div class="drop-live-grid">
+        <button class="drop-live-tile" type="button" data-open-product="stormline-gallery-tee">
+          <img src="assets/jagah-drop-graphite.webp" alt="JAGAH graphite graphic t-shirt campaign" loading="lazy">
+          <span>Graphite</span>
+        </button>
+        <button class="drop-live-tile" type="button" data-open-product="midnight-stormline-gallery-tee">
+          <img src="assets/jagah-drop-midnight.webp" alt="JAGAH midnight graphic t-shirt campaign" loading="lazy">
+          <span>Midnight</span>
+        </button>
+        <button class="drop-live-tile" type="button" data-open-product="sky-tide-gallery-tee">
+          <img src="assets/jagah-drop-sky.webp" alt="JAGAH sky blue graphic t-shirt campaign" loading="lazy">
+          <span>Sky Blue</span>
+        </button>
+        <button class="drop-live-tile" type="button" data-open-product="cream-tide-gallery-tee">
+          <img src="assets/jagah-drop-cream.webp" alt="JAGAH cream graphic t-shirt campaign" loading="lazy">
+          <span>Cream</span>
+        </button>
+        <button class="drop-live-tile" type="button" data-open-product="white-blue-tide-gallery-tee">
+          <img src="assets/jagah-drop-white.webp" alt="JAGAH white blue graphic t-shirt campaign" loading="lazy">
+          <span>White</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="feature-split" id="collection">
+      <img src="assets/jagah-graphic-midnight.webp" alt="JAGAH midnight graphic t-shirt" loading="lazy">
+      <div data-reveal>
+        <p class="kicker">Featured</p>
+        <h2>JAGAH Graphic T-Shirt</h2>
+        <p>Five colourways, one clean graphic tee. Open it, select your size and colour, then send the order straight to WhatsApp.</p>
+        <button class="button primary" type="button" data-open-product="midnight-stormline-gallery-tee">Select and buy</button>
+      </div>
+    </section>
+
+    <section class="lookbook" aria-label="JAGAH lookbook">
+      <div class="section-heading" data-reveal>
+        <p class="kicker">Lookbook</p>
+        <h2>Current visuals.</h2>
+      </div>
+      <div class="lookbook-grid">
+        <img src="assets/canva-jgh-page-1.png" alt="JAGAH graphic back design" loading="lazy">
+        <img src="assets/canva-jgh-page-2.png" alt="JAGAH front design" loading="lazy">
+        <img src="assets/canva-second-page-2.png" alt="JAGAH portrait campaign design" loading="lazy">
+        <img src="assets/jagah-white-blue-tide-gallery-tee.webp" alt="JAGAH white blue tide gallery tee" loading="lazy">
+      </div>
+    </section>
+
+  </main>
+
+  <aside class="bag-drawer" data-bag-drawer aria-hidden="true" aria-labelledby="bag-title">
+    <div class="drawer-head">
+      <div>
+        <h2 id="bag-title">Shopping Bag</h2>
+      </div>
+      <button class="close-button" type="button" data-close-bag aria-label="Close bag">X</button>
+    </div>
+    <div class="bag-items" data-bag-items></div>
+    <div class="bag-empty" data-bag-empty>
+      <strong>Your bag is empty.</strong>
+      <span>Add a product, select your size, then buy on WhatsApp.</span>
+    </div>
+    <div class="bag-summary">
+      <label class="coupon-line">
+        Promo code
+        <span>
+          <input type="text" data-coupon-input placeholder="JAGAH10">
+          <button type="button" data-apply-coupon>Apply</button>
+        </span>
+      </label>
+      <div class="summary-row"><span>Subtotal</span><strong data-subtotal>NGN 0</strong></div>
+      <div class="summary-row"><span>Discount</span><strong data-discount>NGN 0</strong></div>
+      <div class="summary-row"><span>Delivery estimate</span><strong data-delivery>Free</strong></div>
+      <div class="summary-row total"><span>Total</span><strong data-total>NGN 0</strong></div>
+      <button class="button primary full" type="button" data-checkout>Buy it now</button>
+      <button class="button soft full" type="button" data-close-bag>Continue shopping</button>
+    </div>
+  </aside>
+  <div class="scrim" data-scrim hidden></div>
+
+  <dialog class="checkout-dialog" data-checkout-dialog>
+    <button class="close-button dialog-close" type="button" data-close-checkout aria-label="Close checkout">X</button>
+    <form class="checkout-form" data-checkout-form>
+      <div>
+        <p class="kicker">Checkout</p>
+        <h2>Send order to WhatsApp</h2>
+        <fieldset>
+          <legend>Contact</legend>
+          <label>Name<input name="name" type="text" required></label>
+          <label>Phone<input name="phone" type="tel" required></label>
+        </fieldset>
+        <fieldset>
+          <legend>Delivery</legend>
+          <label>Address<input name="address" type="text" required></label>
+          <label>City<input name="city" type="text" required></label>
+          <label>
+            Delivery method
+            <select name="delivery">
+              <option value="Standard delivery">Standard delivery</option>
+              <option value="Express delivery">Express delivery</option>
+              <option value="Pickup">Pickup</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Payment</legend>
+          <label>
+            Payment method
+            <select name="payment">
+              <option value="WhatsApp order confirmation">WhatsApp order confirmation</option>
+              <option value="Bank transfer">Bank transfer</option>
+              <option value="Pay on delivery">Pay on delivery</option>
+            </select>
+          </label>
+        </fieldset>
+        <button class="button primary full" type="submit">Place order on WhatsApp</button>
+      </div>
+      <aside class="checkout-summary" data-checkout-summary></aside>
+    </form>
+  </dialog>
+
+  <dialog class="mini-dialog" data-wishlist-dialog>
+    <button class="close-button dialog-close" type="button" data-close-wishlist aria-label="Close wishlist">X</button>
+    <p class="kicker">Wishlist</p>
+    <h2>Saved pieces</h2>
+    <div class="saved-list" data-wishlist-list></div>
+  </dialog>
+
+  <dialog class="mini-dialog" data-account-dialog>
+    <button class="close-button dialog-close" type="button" data-close-account aria-label="Close account">X</button>
+    <p class="kicker">Account</p>
+    <h2>Your JAGAH profile</h2>
+    <form class="account-form" data-account-form>
+      <label>Name<input type="text" name="name" data-profile-name placeholder="Your name"></label>
+      <label>Phone<input type="tel" name="phone" data-profile-phone placeholder="08125812372"></label>
+      <label>Email<input type="email" name="email" data-profile-email placeholder="you@example.com"></label>
+      <button class="button primary full" type="submit">Save profile</button>
+    </form>
+    <div class="order-mini-list" data-account-orders></div>
+  </dialog>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <footer class="retail-footer jagah-footer" id="support">
+    <section class="jagah-footer-grid" aria-label="JAGAH footer">
+      <div class="jagah-footer-brand">
+        <a class="footer-logo" href="#top" aria-label="JAGAH home">
+          <img src="assets/jagah-logo-transparent.png" alt="JAGAH">
+        </a>
+        <p>At JAGAH, we believe streetwear is movement, identity, and everyday expression.</p>
+        <a class="instagram-link" href="#support" aria-label="JAGAH Instagram">IG</a>
+        <div class="footer-address">
+          <strong>Operating hours: Monday - Saturday (10am - 8pm) Sunday (12pm - 8pm)</strong>
+          <span>Lagos, Nigeria</span>
+          <a href="#support">Get directions</a>
+        </div>
+      </div>
+
+      <nav class="footer-link-group" aria-label="Quick links">
+        <h3>Quick link</h3>
+        <a href="#top">Home</a>
+        <a href="about.html">About</a>
+        <a href="#support">Contact</a>
+        <a href="#support">FAQ</a>
+      </nav>
+
+      <nav class="footer-link-group" aria-label="Shop links">
+        <h3>Shop</h3>
+        <a href="#shop">Shop all</a>
+        <a href="#shop">New arrivals</a>
+        <a href="#drop">JAGAH drop live</a>
+      </nav>
+
+      <form class="footer-newsletter jagah-newsletter" data-footer-newsletter>
+        <h2>Get 10% off your next order</h2>
+        <p>By signing up, you agree to receive JAGAH drop emails and order updates.</p>
+        <label>
+          <span class="sr-only">Name</span>
+          <input type="text" name="name" placeholder="Name">
+        </label>
+        <label>
+          <span class="sr-only">Email</span>
+          <input type="email" name="email" placeholder="Email" required>
+          <button type="submit" aria-label="Subscribe">-></button>
+        </label>
+      </form>
+    </section>
+
+    <div class="footer-bottom">
+      <span>&copy; 2026 JAGAH</span>
+      <div>
+        <a href="#support">Privacy & Cookies</a>
+        <a href="#support">T&Cs</a>
+        <a href="#support">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js?v=jagah-cart-drawer"></script>
+</body>
+</html>
+
+
+
+
