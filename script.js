@@ -36,6 +36,27 @@ const graphicTeeColorImages = {
 
 const products = [
   {
+  }
+  id: "jgh-black-female",
+  name: "JGH Black Female Tee",
+  category: "Gallery Tees",
+  price: 50000,
+  fixedPrice: true,
+  originalPrice: null,
+  image: "assets/jgh-black-female.webp",
+  images: ["assets/jgh-black-female.webp"],
+  colorImages: {
+    "Black": "assets/jgh-black-female.webp",
+  },
+  imageFit: "contain",
+  colors: ["Black"],
+  sizes: ["S", "M", "L", "XL", "2XL"],
+  badge: "New Arrival",
+  description: "Black JAGAH tee styled for the new drop.",
+  details: ["One colour available", "Relaxed streetwear fit"],
+  keywords: ["black", "female", "jagah", "tee"],
+  date: "2026-07-22",
+},
     id: "stormline-gallery-tee",
     name: "JAGAH Graphic T-Shirt",
     category: "Gallery Tees",
@@ -262,6 +283,7 @@ const products = [
 ];
 
 const featuredProductIds = [
+  "jgh-black-female",
   "cream-panel-logo-tee",
   "stormline-gallery-tee",
   "midnight-stormline-gallery-tee",
