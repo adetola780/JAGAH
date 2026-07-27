@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=jagah-new-70k-product">
+  <link rel="stylesheet" href="styles.css?v=jagah-search-1">
 </head>
 <body class="about-body">
   <a class="skip-link" href="#story">Skip to story</a>
@@ -38,11 +38,13 @@
       </button>
       <form class="search" role="search">
         <label class="sr-only" for="site-search">Search JAGAH products</label>
-        <svg aria-hidden="true" viewBox="0 0 24 24">
-          <circle cx="11" cy="11" r="7"></circle>
-          <path d="m20 20-4-4"></path>
-        </svg>
-        <input id="site-search" type="search" autocomplete="off" placeholder="Search tees">
+        <button class="search-toggle" type="button" data-search-toggle aria-label="Open product search" aria-expanded="false">
+          <svg aria-hidden="true" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="m20 20-4-4"></path>
+          </svg>
+        </button>
+        <input id="site-search" name="search" type="search" autocomplete="off" placeholder="Search tees">
         <div class="suggestions" hidden></div>
       </form>
       <button class="bag-trigger" type="button" aria-label="Open shopping bag" title="Shopping bag">
@@ -266,6 +268,6 @@
 
   <div class="toast" data-toast role="status" aria-live="polite"></div>
   <script src="site-extras.js?v=jagah-extras-1"></script>
-  <script src="script.js?v=jagah-storefront-2"></script>
+  <script src="script.js?v=jagah-storefront-3"></script>
 </body>
 </html>
